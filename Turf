@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turf & Tech Arena | Live Booking Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGreen: '#10B981',
+                        brandBlue: '#3B82F6',
+                        brandDark: '#0B0F19',
+                        brandCard: '#151D30',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-brandDark text-gray-100 font-sans antialiased selection:bg-brandGreen selection:text-black">
+
+    <!-- Header Navbar -->
+    <header class="border-b border-gray-800 bg-brandDark/90 sticky top-0 z-40 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-brandGreen to-brandBlue flex items-center justify-center font-black text-black text-xl">
+                    T
+                </div>
+                <span class="text-xl font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-brandGreen to-brandBlue">
+                    TURF & TECH ARENA
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-xs bg-emerald-500/10 text-brandGreen border border-brandGreen/30 px-3 py-1 rounded-full font-semibold flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-brandGreen animate-pulse"></span> Arena Live: 9 AM - 2 AM
+                </span>
+                <a href="#booking" class="bg-brandGreen hover:bg-emerald-400 text-black font-bold px-4 py-2 rounded-lg text-sm transition">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+        <span class="text-brandBlue text-sm font-bold uppercase tracking-widest bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20">
+            Dhaka's First Hybrid Sports & Esports Facility
+        </span>
+        <h1 class="text-4xl sm:text-6xl font-black mt-4 tracking-tight leading-tight">
+            Play Physical. <span class="text-brandGreen">Compete Digital.</span>
+        </h1>
+        <p class="mt-4 text-gray-400 max-w-2xl mx-auto text-base sm:text-lg">
+            FIFA-grade synthetic futsal turf ground paired with high-spec RTX 4070 & PS5 esports gaming lounge in Bashundhara / Banani.
+        </p>
+    </section>
+
+    <!-- Facility Overview Cards -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Turf Card -->
+        <div class="bg-brandCard border border-gray-800 rounded-2xl p-6 relative overflow-hidden group">
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-800">
+                    Physical Arena
+                </span>
+                <i class="fa-solid fa-futbol text-2xl text-brandGreen"></i>
+            </div>
+            <h3 class="text-2xl font-bold">FIFA-Standard Multi-Sport Turf</h3>
+            <p class="text-gray-400 text-sm mt-2">120ft × 80ft playable area with 50mm pile height synthetic grass, 500W LED floodlights, and shock-pad injury protection.</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs text-gray-300">
+                <span class="bg-gray-800 px-2.5 py-1 rounded">5-a-side Futsal</span>
+                <span class="bg-gray-800 px-2.5 py-1 rounded">Box Cricket</span>
+                <span class="bg-gray-800 px-2.5 py-1 rounded">Badminton</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-800/80 flex items-center justify-between text-sm">
+                <div>
+                    <span class="text-gray-400">Off-Peak:</span> <span class="font-bold text-white">৳1,500/hr</span>
+                </div>
+                <div>
+                    <span class="text-gray-400">Peak (6PM-12AM):</span> <span class="font-bold text-brandGreen">৳2,500/hr</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Esports Card -->
+        <div class="bg-brandCard border border-gray-800 rounded-2xl p-6 relative overflow-hidden group">
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-xs uppercase tracking-widest text-blue-400 font-bold bg-blue-950/60 px-3 py-1 rounded-full border border-blue-800">
+                    Digital Arena
+                </span>
+                <i class="fa-solid fa-gamepad text-2xl text-brandBlue"></i>
+            </div>
+            <h3 class="text-2xl font-bold">Esports & Console Lounge</h3>
+            <p class="text-gray-400 text-sm mt-2">15x Custom PCs (Core i7-13700K, RTX 4070, 144Hz monitors) + 3x PS5 console stations with 65" 4K displays on 500Mbps fiber.</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs text-gray-300">
+                <span class="bg-gray-800 px-2.5 py-1 rounded">Valorant / CS2</span>
+                <span class="bg-gray-800 px-2.5 py-1 rounded">EA FC 25</span>
+                <span class="bg-gray-800 px-2.5 py-1 rounded">eFootball</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-800/80 flex items-center justify-between text-sm">
+                <div>
+                    <span class="text-gray-400">PC Station:</span> <span class="font-bold text-white">৳100/hr</span>
+                </div>
+                <div>
+                    <span class="text-gray-400">PS5 Lounge:</span> <span class="font-bold text-brandBlue">৳250/hr</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Live Demo Booking Portal -->
+    <section id="booking" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="bg-brandCard border border-emerald-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl shadow-emerald-950/50">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-brandGreen tracking-widest uppercase bg-emerald-500/10 px-3 py-1 rounded-full">
+                    Interactive Demo
+                </span>
+                <h2 class="text-3xl font-black mt-2">Instant Slot Reservation</h2>
+                <p class="text-sm text-gray-400 mt-1">Select your service, choose your preferred timing, and simulate online booking.</p>
+            </div>
+
+            <form id="bookingForm" onsubmit="handleBooking(event)" class="space-y-6">
+                <!-- Service Selection -->
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-400 mb-2">1. Select Facility Service</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <label class="border border-gray-700 rounded-xl p-3.5 flex items-center gap-3 cursor-pointer hover:border-brandGreen transition bg-gray-900/60">
+                            <input type="radio" name="service" value="turf" class="accent-emerald-500" checked onchange="updatePrice()">
+                            <div>
+                                <p class="text-sm font-bold">Futsal / Turf</p>
+                                <p class="text-xs text-gray-400">From ৳1,500/hr</p>
+                            </div>
+                        </label>
+                        <label class="border border-gray-700 rounded-xl p-3.5 flex items-center gap-3 cursor-pointer hover:border-brandBlue transition bg-gray-900/60">
+                            <input type="radio" name="service" value="pc" class="accent-blue-500" onchange="updatePrice()">
+                            <div>
+                                <p class="text-sm font-bold">RTX 4070 PC</p>
+                                <p class="text-xs text-gray-400">৳100/hr per seat</p>
+                            </div>
+                        </label>
+                        <label class="border border-gray-700 rounded-xl p-3.5 flex items-center gap-3 cursor-pointer hover:border-brandBlue transition bg-gray-900/60">
+                            <input type="radio" name="service" value="ps5" class="accent-blue-500" onchange="updatePrice()">
+                            <div>
+                                <p class="text-sm font-bold">PS5 Lounge</p>
+                                <p class="text-xs text-gray-400">৳250/hr lounge</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Personal Info & Date -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-gray-400 mb-1.5">Customer Name</label>
+                        <input type="text" id="custName" required placeholder="e.g. Tanvir Ahmed" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2.5 text-sm focus:border-brandGreen focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-gray-400 mb-1.5">Phone Number (bKash/Nagad)</label>
+                        <input type="tel" id="custPhone" required placeholder="017XXXXXXXX" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2.5 text-sm focus:border-brandGreen focus:outline-none">
+                    </div>
+                </div>
+
+                <!-- Date & Slot Timing -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-gray-400 mb-1.5">Date</label>
+                        <input type="date" id="bookDate" required class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2.5 text-sm focus:border-brandGreen focus:outline-none text-gray-200">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-gray-400 mb-1.5">Time Window</label>
+                        <select id="timeSlot" onchange="updatePrice()" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2.5 text-sm focus:border-brandGreen focus:outline-none text-gray-200">
+                            <option value="10:00 AM - 11:00 AM (Off-Peak)">10:00 AM - 11:00 AM (Off-Peak)</option>
+                            <option value="02:00 PM - 03:00 PM (Off-Peak)">02:00 PM - 03:00 PM (Off-Peak)</option>
+                            <option value="04:00 PM - 05:00 PM (Off-Peak)">04:00 PM - 05:00 PM (Off-Peak)</option>
+                            <option value="07:00 PM - 08:00 PM (Peak Hour)" selected>07:00 PM - 08:00 PM (Peak Hour)</option>
+                            <option value="09:00 PM - 10:00 PM (Peak Hour)">09:00 PM - 10:00 PM (Peak Hour)</option>
+                            <option value="11:00 PM - 12:00 AM (Peak Hour)">11:00 PM - 12:00 AM (Peak Hour)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-gray-400 mb-1.5">Duration</label>
+                        <select id="duration" onchange="updatePrice()" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2.5 text-sm focus:border-brandGreen focus:outline-none text-gray-200">
+                            <option value="1">1 Hour</option>
+                            <option value="2">2 Hours</option>
+                            <option value="3">3 Hours</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Price Summary Box -->
+                <div class="bg-gray-900/80 border border-gray-800 rounded-xl p-4 flex items-center justify-between">
+                    <div>
+                        <p class="text-xs text-gray-400">Estimated Total Bill</p>
+                        <p class="text-2xl font-black text-brandGreen" id="totalAmount">৳ 2,500</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-xs text-gray-400">Required 50% Advance</p>
+                        <p class="text-lg font-bold text-white" id="advanceAmount">৳ 1,250</p>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-gradient-to-r from-brandGreen to-brandBlue hover:opacity-90 text-black font-extrabold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-bolt"></i> Confirm & Generate Digital Pass
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Confirmation Modal (Popup) -->
+    <div id="confirmModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-brandCard border border-emerald-500 rounded-3xl max-w-md w-full p-6 text-center relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="w-14 h-14 rounded-full bg-emerald-500/20 text-brandGreen flex items-center justify-center mx-auto text-2xl mb-3">
+                <i class="fa-solid fa-check-double"></i>
+            </div>
+            <h3 class="text-2xl font-black">Booking Confirmed!</h3>
+            <p class="text-xs text-gray-400 mt-1">Present this QR pass at the Turf & Tech Arena entrance.</p>
+
+            <div class="my-5 p-4 bg-gray-900 rounded-2xl border border-gray-800 text-left text-xs space-y-2">
+                <div class="flex justify-between"><span class="text-gray-400">Booking ID:</span><span class="font-mono font-bold text-brandGreen" id="modalBookingId">#TTA-9482</span></div>
+                <div class="flex justify-between"><span class="text-gray-400">Name:</span><span class="font-bold" id="modalName">-</span></div>
+                <div class="flex justify-between"><span class="text-gray-400">Facility:</span><span class="font-bold" id="modalService">-</span></div>
+                <div class="flex justify-between"><span class="text-gray-400">Slot:</span><span class="font-bold" id="modalSlot">-</span></div>
+                <div class="flex justify-between"><span class="text-gray-400">Advance Paid (50%):</span><span class="font-bold text-white" id="modalAdvance">-</span></div>
+            </div>
+
+            <!-- Mock QR Code -->
+            <div class="w-36 h-36 mx-auto bg-white p-2 rounded-xl flex items-center justify-center shadow-inner">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=TURF-TECH-ARENA-VALID" alt="QR Pass" class="w-full h-full">
+            </div>
+            <p class="text-[10px] text-gray-400 mt-3">Scan at turnstile barrier for automated gate check-in</p>
+
+            <button onclick="closeModal()" class="mt-4 w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 rounded-lg text-xs transition">
+                Close Ticket
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Set today's date in input field
+        document.getElementById('bookDate').valueAsDate = new Date();
+
+        function updatePrice() {
+            const service = document.querySelector('input[name="service"]:checked').value;
+            const timeSlot = document.getElementById('timeSlot').value;
+            const duration = parseInt(document.getElementById('duration').value);
+            const isPeak = timeSlot.includes('Peak Hour');
+
+            let hourlyRate = 0;
+            if (service === 'turf') {
+                hourlyRate = isPeak ? 2500 : 1500;
+            } else if (service === 'pc') {
+                hourlyRate = 100;
+            } else if (service === 'ps5') {
+                hourlyRate = 250;
+            }
+
+            const total = hourlyRate * duration;
+            const advance = total * 0.5;
+
+            document.getElementById('totalAmount').innerText = '৳ ' + total.toLocaleString();
+            document.getElementById('advanceAmount').innerText = '৳ ' + advance.toLocaleString();
+        }
+
+        function handleBooking(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('custName').value;
+            const service = document.querySelector('input[name="service"]:checked').value;
+            const slot = document.getElementById('timeSlot').value;
+            const date = document.getElementById('bookDate').value;
+            const advance = document.getElementById('advanceAmount').innerText;
+            const randomId = '#TTA-' + Math.floor(1000 + Math.random() * 9000);
+
+            let serviceTitle = 'Futsal Turf';
+            if (service === 'pc') serviceTitle = 'High-Spec Gaming PC';
+            if (service === 'ps5') serviceTitle = 'PlayStation 5 Lounge';
+
+            document.getElementById('modalBookingId').innerText = randomId;
+            document.getElementById('modalName').innerText = name;
+            document.getElementById('modalService').innerText = serviceTitle;
+            document.getElementById('modalSlot').innerText = date + ' (' + slot.split(' ')[0] + ')';
+            document.getElementById('modalAdvance').innerText = advance + ' (via bKash)';
+
+            document.getElementById('confirmModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('confirmModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
